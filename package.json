@@ -1,0 +1,42 @@
+{
+  "name": "vie-react",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "deploy-prod": "env-cmd -f .env.production npm run build && firebase deploy -P barity-prod",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
+    "axios": "^0.25.0",
+    "firebase": "^9.22.1",
+    "formik": "^2.2.9",
+    "next": "^12.3.4",
+    "react": "17.0.2",
+    "react-circular-progressbar": "^2.0.4",
+    "react-countup": "^6.1.0",
+    "react-dom": "17.0.2",
+    "react-hot-toast": "^2.4.1",
+    "react-modal-video": "^1.2.8",
+    "react-scroll": "^1.8.4",
+    "react-slick": "^0.28.1",
+    "react-tsparticles": "^1.37.4",
+    "react-visibility-sensor": "^5.1.1",
+    "sass": "^1.45.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^7.3.0",
+    "typewriter-effect": "^2.18.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "typescript": "5.4.5"
+  }
+}

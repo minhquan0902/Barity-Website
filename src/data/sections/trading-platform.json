@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "lightImage": "/img/Barity-Trading-Platform/Binance_Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Binance_Logo.png",
+    "url": "www.binance.com"
+  },
+  {
+    "id": 2,
+    "lightImage": "/img/Barity-Trading-Platform/Huobi_Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Huobi_Logo.png",
+    "url": "www.huobi.com"
+  },
+  {
+    "id": 3,
+    "lightImage": "/img/Barity-Trading-Platform/Bybit-Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Bybit-Logo.png",
+    "url": "www.bybit.com"
+  },
+  {
+    "id": 4,
+    "lightImage": "/img/Barity-Trading-Platform/Capital_Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Capital_Logo.png",
+    "url": "www.capital.com"
+  },
+  {
+    "id": 5,
+    "lightImage": "/img/Barity-Trading-Platform/Etoro_Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Etoro_Logo.png",
+    "url": "www.etoro.com"
+  },
+  {
+    "id": 6,
+    "lightImage": "/img/Barity-Trading-Platform/Uniswap_Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Uniswap_Logo.png",
+    "url": "www.uniswap.org"
+  },
+  {
+    "id": 7,
+    "lightImage": "/img/Barity-Trading-Platform/Sushiswap_Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Sushiswap_Logo.png",
+    "url": "www.sushi.com"
+  },
+  {
+    "id": 8,
+    "lightImage": "/img/Barity-Trading-Platform/Curveswap_Logo.png",
+    "darkImage": "/img/Barity-Trading-Platform/Curveswap_Logo.png",
+    "url": "curve.fi"
+  }
+]

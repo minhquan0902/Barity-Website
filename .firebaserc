@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "barity-software",
+    "barity-prod": "barity-software"
+  },
+  "targets": {},
+  "etags": {}
+}

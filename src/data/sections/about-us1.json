@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "smallTitle": "About Us",
+  "title": "Our Company",
+  "content": "Welcome to our trading firm, where we specialize in high frequency trading, arbitrage opportunities, and ICO projects with high and steady potential returns. Our professional team is dedicated to carefully selecting opportunities and implementing risk management strategies to ensure that our clients receive the best possible returns on their investments.",
+  "image": "/img/Barity-Homepage/about-us-home-3_resize.jpg",
+  "stauts": [
+    {
+      "id": 1,
+      "number": "7-8",
+      "letter": "%",
+      "stautsName": "monthly return by algorithmic trading"
+    },
+    {
+      "id": 2,
+      "number": "50",
+      "letter": "%",
+      "stautsName": "return by ICO investment"
+    }
+  ]
+}

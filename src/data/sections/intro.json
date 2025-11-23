@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Barity Capital",
+    "content": "Welcome to Barity. We are a team of experienced traders and analysts dedicated to providing our clients with the best possible returns through a range of trading strategies. Our focus on high-frequency trading, arbitrage trading, and ICO investment allows us to provide comprehensive solutions to meet the needs of individual and institutional investors alike. With a commitment to risk management and precision execution, we are dedicated to helping our clients achieve their investment goals in the ever-evolving world of trading and investments.",
+    "image": "/img/Barity-Homepage/home1_1920x1080.jpg",
+    "checkLookMore": false,
+    "redirect": "/"
+  },
+  {
+    "id": 2,
+    "title": "Strategy",
+    "content": "Our trading firm specializes in three core strategies: high-frequency trading, arbitrage trading, and ICO investment. Our high-frequency trading strategy leverages advanced technology and proprietary algorithms to identify and execute trades with speed and precision. Our arbitrage trading strategy takes advantage of price discrepancies between different markets, providing low-risk or risk-free opportunities for our clients. Our ICO investment strategy involves identifying high-potential ICO projects and investing in them on behalf of our clients. With a focus on risk management and a commitment to providing the best possible returns, our strategies are designed to meet the needs of individual and institutional investors alike.",
+    "image": "/img/Barity-Homepage/home2_1920x1080.jpg",
+    "checkLookMore": true,
+    "redirect": "/strategies"
+  },
+  {
+    "id": 3,
+    "title": "Our Vision",
+    "content": "At Barity, we provide our clients with a comprehensive range of trading strategies designed to help them achieve their investment goals. We believe that by focusing on high-frequency trading, arbitrage trading, and ICO investment, we can offer our clients a diverse set of opportunities to help them navigate the complex world of trading and investments. With a team of experienced traders and analysts, a commitment to risk management, and a dedication to precision execution, we aim to be a trusted partner for our clients as they pursue their investment objectives.",
+    "image": "/img/Barity-Homepage/Home3_1_1920x1080.jpg",
+    "checkLookMore": true,
+    "redirect": "/visions"
+  }
+]

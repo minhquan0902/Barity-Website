@@ -1,0 +1,40 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "image": "/img/team/1.jpg",
+      "title": "Tung Trinh",
+      "sub": "Founder - CFO"
+    },
+    {
+      "id": 2,
+      "image": "/img/team/2.jpg",
+      "title": "Minh Bui",
+      "sub": "CTO"
+    },
+    {
+      "id": 3,
+      "image": "/img/team/3.jpg",
+      "title": "Hai Pham",
+      "sub": "Developer"
+    },
+    {
+      "id": 4,
+      "image": "/img/team/4.jpg",
+      "title": "Quan Nguyen",
+      "sub": "Developer"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "text": "UI / UX Design",
+      "value": "90%"
+    },
+    {
+      "id": 2,
+      "text": "Apps Development",
+      "value": "80%"
+    }
+  ]
+}

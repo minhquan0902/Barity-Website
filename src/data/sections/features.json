@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "fab fa-bitcoin",
+    "title": "Crypto",
+    "content": "we seek to take a long position in underprice crypto while selling short overpriced tokens."
+  },
+  {
+    "id": 2,
+    "icon": "pe-7s-graph1",
+    "title": "Forex",
+    "content": "We apply arbitrage strategy to take advantage of price differences in different markets for the same asset."
+  },
+  {
+    "id": 3,
+    "icon": "pe-7s-display1",
+    "title": "OTC",
+    "content": "We fund ICO projects by buying tokens to access their network or service."
+  },
+  {
+    "id": 4,
+    "icon": "pe-7s-diskette",
+    "title": "Document Legal Policy",
+    "content": "Tempore corrupti temporibus fuga earum asperiores fugit laudantium."
+  }
+]
