@@ -1,5 +1,6 @@
 .vercel
 .firebase
 .next
+.claude
 node_modules
 firebase-debug.log
