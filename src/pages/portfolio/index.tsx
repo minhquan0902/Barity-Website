@@ -241,24 +241,25 @@ const Portfolio = () => {
           </TabPanel>
 
           <TabPanel value={tabValue} index={1}>
-            {loading ? (
-              <Box sx={{ textAlign: "center", marginBottom: 30 }}>
-                <CircularProgress />
-              </Box>
-            ) : (
-              <>
-                {arbs !== null && arbs?.length > 0 ? (
-                  <ArbitrageGrid arbs={arbs} />
-                ) : (
-                  <div className="mb-100" style={{ textAlign: "center" }}>
-                    <h3>
-                      No Arbitrage Opportunities found at the moment &#128532;.
-                      Please wait and try again!
-                    </h3>
-                  </div>
-                )}
-              </>
-            )}
+            <>
+              {loading && (
+                <Box sx={{ textAlign: "center", marginBottom: 2 }}>
+                  <CircularProgress size={30} />
+                  <p style={{ marginTop: "10px", color: "#999" }}>Loading arbitrage opportunities...</p>
+                </Box>
+              )}
+              {!loading && arbs !== null && arbs?.length > 0 && (
+                <ArbitrageGrid arbs={arbs} />
+              )}
+              {!loading && (arbs === null || arbs?.length === 0) && (
+                <div className="mb-100" style={{ textAlign: "center" }}>
+                  <h3>
+                    No Arbitrage Opportunities found at the moment &#128532;.
+                    Please wait and try again!
+                  </h3>
+                </div>
+              )}
+            </>
           </TabPanel>
         </Box>
 
