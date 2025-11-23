@@ -11,6 +11,7 @@ import AboutIntro from "../../components/About-intro";
 import DarkTheme from "../../layouts/Dark";
 import Team from "../../components/Team/team";
 import MinimalArea from "../../components/Minimal-Area/minimal-area";
+import VisionHeader from "../../components/Vision-Header/visionHeader";
 
 const About = () => {
   const navbarRef = React.useRef(null);
@@ -37,6 +38,7 @@ const About = () => {
       <Navbar nr={navbarRef} lr={logoRef} from="about-dark" />
       <PagesHeader />
       <AboutIntro />
+      <VisionHeader />
       <br />
       <br />
       <br />

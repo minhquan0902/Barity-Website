@@ -19,12 +19,39 @@ const NavbarFullMenu = ({ theme }) => {
             <a href="#0">
               {theme ? (
                 theme === "light" ? (
-                  <img src={appData.darkLogo} alt="logo" />
+                  <img
+                    src={appData.darkLogo}
+                    alt="logo"
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      borderRadius: "50%",
+                      objectFit: "cover"
+                    }}
+                  />
                 ) : (
-                  <img src={appData.lightLogo} alt="logo" />
+                  <img
+                    src={appData.lightLogo}
+                    alt="logo"
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      borderRadius: "50%",
+                      objectFit: "cover"
+                    }}
+                  />
                 )
               ) : (
-                <img src={appData.lightLogo} alt="logo" />
+                <img
+                  src={appData.lightLogo}
+                  alt="logo"
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "50%",
+                    objectFit: "cover"
+                  }}
+                />
               )}
             </a>
           </div>

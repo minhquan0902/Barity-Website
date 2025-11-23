@@ -13,12 +13,39 @@ const NavbarArch = ({ navbarRef, theme }) => {
         <a className="logo" href="/">
           {theme ? (
             theme === "themeL" ? (
-              <img src={appData.darkLogo} alt="logo" />
+              <img
+                src={appData.darkLogo}
+                alt="logo"
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "50%",
+                  objectFit: "cover"
+                }}
+              />
             ) : (
-              <img src={appData.lightLogo} alt="logo" />
+              <img
+                src={appData.lightLogo}
+                alt="logo"
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "50%",
+                  objectFit: "cover"
+                }}
+              />
             )
           ) : (
-            <img src={appData.lightLogo} alt="logo" />
+            <img
+              src={appData.lightLogo}
+              alt="logo"
+              style={{
+                width: "60px",
+                height: "60px",
+                borderRadius: "50%",
+                objectFit: "cover"
+              }}
+            />
           )}
         </a>
 

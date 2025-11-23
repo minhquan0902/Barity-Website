@@ -17,12 +17,42 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
           <a className="logo">
             {theme ? (
               theme === "themeL" ? (
-                <img ref={lr} src={appData.darkLogo} alt="logo" />
+                <img
+                  ref={lr}
+                  src={appData.darkLogo}
+                  alt="logo"
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "50%",
+                    objectFit: "cover"
+                  }}
+                />
               ) : (
-                <img ref={lr} src={appData.lightLogo} alt="logo" />
+                <img
+                  ref={lr}
+                  src={appData.lightLogo}
+                  alt="logo"
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "50%",
+                    objectFit: "cover"
+                  }}
+                />
               )
             ) : (
-              <img ref={lr} src={appData.lightLogo} alt="logo" />
+              <img
+                ref={lr}
+                src={appData.lightLogo}
+                alt="logo"
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "50%",
+                  objectFit: "cover"
+                }}
+              />
             )}
           </a>
         </Link>

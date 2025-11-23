@@ -15,19 +15,47 @@ const Navbar = ({ lr, nr, theme }) => {
     >
       <div className="container">
         <Link href="/">
-          <div style={{ width: "15%" }}>
-            <a>
-              {theme ? (
-                theme === "themeL" ? (
-                  <img ref={lr} src={appData.fullLogo} alt="logo" />
-                ) : (
-                  <img ref={lr} src={appData.fullLogo} alt="logo" />
-                )
+          <a>
+            {theme ? (
+              theme === "themeL" ? (
+                <img
+                  ref={lr}
+                  src={appData.fullLogo}
+                  alt="logo"
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "50%",
+                    objectFit: "cover"
+                  }}
+                />
               ) : (
-                <img ref={lr} src={appData.fullLogo} alt="logo" />
-              )}
-            </a>
-          </div>
+                <img
+                  ref={lr}
+                  src={appData.fullLogo}
+                  alt="logo"
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "50%",
+                    objectFit: "cover"
+                  }}
+                />
+              )
+            ) : (
+              <img
+                ref={lr}
+                src={appData.fullLogo}
+                alt="logo"
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  borderRadius: "50%",
+                  objectFit: "cover"
+                }}
+              />
+            )}
+          </a>
         </Link>
 
         <button
@@ -86,31 +114,14 @@ const Navbar = ({ lr, nr, theme }) => {
               </div>
             </li> */}
             <li className="nav-item">
-              <Link href={`/visions`}>
-                <a className="nav-link">Vision</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href={`/strategies`}>
-                <a className="nav-link">Strategies</a>
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link href={`/arbitrage-opportunities`}>
-                <a className="nav-link">Arbitrage Opportunities</a>
+              <Link href={`/portfolio`}>
+                <a className="nav-link">Portfolio</a>
               </Link>
             </li>
 
             <li className="nav-item">
               <Link href={`/contact`}>
-                <a className="nav-link">Become Our Investor</a>
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link href={`/looking-for-investment`}>
-                <a className="nav-link">Looking For Investment</a>
+                <a className="nav-link">Contact</a>
               </Link>
             </li>
           </ul>

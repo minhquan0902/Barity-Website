@@ -12,4 +12,48 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: false,
   },
+  async redirects() {
+    return [
+      {
+        source: '/visions',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/visions/',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/strategies',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/strategies/',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/looking-for-investment',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/looking-for-investment/',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/arbitrage-opportunities',
+        destination: '/portfolio',
+        permanent: true,
+      },
+      {
+        source: '/arbitrage-opportunities/',
+        destination: '/portfolio/',
+        permanent: true,
+      },
+    ];
+  },
 };

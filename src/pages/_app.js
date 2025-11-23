@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Barity Capital</title>
-        <link rel="icon" href="/img/favicon.ico" />
+        <link rel="icon" href="/img/logo-updated.jpg" />
       </Head>
       <Cursor />
       <LoadingScreen />

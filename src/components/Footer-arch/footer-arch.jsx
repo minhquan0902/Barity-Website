@@ -78,8 +78,17 @@ const FooterArch = () => {
           </div>
           <div className="col-lg-4">
             <div className="item">
-              <div className="logo">
-                <img src={appData.lightLogo} alt="" />
+              <div className="logo" style={{ marginBottom: "20px" }}>
+                <img
+                  src={appData.lightLogo}
+                  alt="Barity Capital Logo"
+                  style={{
+                    width: "120px",
+                    height: "120px",
+                    borderRadius: "50%",
+                    objectFit: "cover"
+                  }}
+                />
               </div>
               <div className="social">
                 <a href="#0">

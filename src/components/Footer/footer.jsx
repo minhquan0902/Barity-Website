@@ -27,8 +27,17 @@ const Footer = ({ hideBGCOLOR }) => {
 
           <div className="col-lg-6">
             <div className="item">
-              <div style={{ width: "50%" }}>
-                <img height={"50%"} src={appData.fullLogo} alt="" />
+              <div style={{ width: "120px", marginBottom: "20px" }}>
+                <img
+                  src={appData.fullLogo}
+                  alt="Barity Capital Logo"
+                  style={{
+                    width: "120px",
+                    height: "120px",
+                    borderRadius: "50%",
+                    objectFit: "cover"
+                  }}
+                />
               </div>
               <div className="social">
                 <a href="https://www.linkedin.com/company/barity/">
