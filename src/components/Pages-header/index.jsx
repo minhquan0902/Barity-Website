@@ -8,10 +8,7 @@ const PagesHeader = () => {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="cont mt-100 mb-50 text-center">
-              <h1 className="color-font fw-700">
-                Our algorithm trading and advanced technology managed by our
-                talent, experience and passion people
-              </h1>
+              <h1 className="color-font fw-700">About Barity</h1>
             </div>
           </div>
           <div className="col-lg-10">

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 import DarkTheme from "../../layouts/Dark";
 import Navbar from "../../components/Navbar/navbar";
 import PageHeader from "../../components/Page-header/page-header";
@@ -66,6 +67,13 @@ const Portfolio = () => {
     });
   }, [navbarRef]);
 
+  // Disable Pace.js AJAX tracking to prevent loading screen on tab changes
+  React.useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).Pace) {
+      (window as any).Pace.options.ajax = false;
+    }
+  }, []);
+
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
     setTabValue(newValue);
   };
@@ -96,6 +104,19 @@ const Portfolio = () => {
 
   return (
     <ThemeProvider theme={darkTheme}>
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.paceOptions = {
+                ajax: false,
+                restartOnPushState: false,
+                restartOnRequestAfter: false
+              };
+            `,
+          }}
+        />
+      </Head>
       <DarkTheme useSkin={undefined} mobileappstyle={undefined}>
         <div className="circle-bg">
           <div className="circle-color fixed">
