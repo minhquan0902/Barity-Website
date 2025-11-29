@@ -11,7 +11,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { toast } from "react-hot-toast";
 import { getArbs } from "../../lib/axios";
-import ArbitrageGrid from "../../components/Arbitrage-grid/Arbitrage-grid";
+import ArbitrageTable from "../../components/Arbitrage-table/Arbitrage-table";
 import { ThemeProvider, createTheme } from "@mui/material/";
 
 const darkTheme = createTheme({
@@ -153,7 +153,7 @@ const Portfolio = () => {
               }}
             >
               <Tab label="Futures" />
-              <Tab label="Arbitrage" />
+              <Tab label="Options" />
             </Tabs>
           </Box>
 
@@ -174,7 +174,7 @@ const Portfolio = () => {
                         }}>
                           <div style={{ marginBottom: "20px" }}>
                             <h4 style={{ color: "#fff", marginBottom: "10px" }}>
-                              Binance Futures Portfolio 1
+                              Low-Mid Frequency Trading
                             </h4>
                             <p style={{ color: "#999", fontSize: "0.9rem" }}>
                               Professional copy trading portfolio
@@ -221,7 +221,7 @@ const Portfolio = () => {
                         }}>
                           <div style={{ marginBottom: "20px" }}>
                             <h4 style={{ color: "#fff", marginBottom: "10px" }}>
-                              Binance Futures Portfolio 2
+                              High Frequency Trading
                             </h4>
                             <p style={{ color: "#999", fontSize: "0.9rem" }}>
                               180-day performance tracking
@@ -270,7 +270,7 @@ const Portfolio = () => {
                 </Box>
               )}
               {!loading && arbs !== null && arbs?.length > 0 && (
-                <ArbitrageGrid arbs={arbs} />
+                <ArbitrageTable arbs={arbs} />
               )}
               {!loading && (arbs === null || arbs?.length === 0) && (
                 <div className="mb-100" style={{ textAlign: "center" }}>

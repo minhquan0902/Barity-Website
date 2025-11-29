@@ -93,13 +93,26 @@ npm run deploy-prod
 
 - Configured for Firebase Hosting
 - Production deployment uses `env-cmd` to load `.env.production`
-- Firebase project: `barity-prod` (configured in `.firebaserc`)
-- Backend region: `us-central1`
+- Firebase project: `barity-software` (aliased as `barity-prod` in `.firebaserc`)
+- Deploy command: `npm run deploy-prod`
 
-## Development Notes
+## Next.js Configuration Notes
 
-- Next.js config enables trailing slashes on routes (`trailingSlash: true`)
-- React Strict Mode is enabled
-- ESLint runs during builds (not ignored)
-- Build activity indicator is disabled in dev mode
-- TypeScript is available but project primarily uses JSX
+- **Trailing Slashes**: Enabled (`trailingSlash: true`) - all routes end with `/`
+- **ESLint**: Ignored during builds (`ignoreDuringBuilds: true`)
+- **Redirects**: Permanent redirects configured in `next.config.js`:
+  - `/visions` → `/about`
+  - `/strategies` → `/about`
+  - `/looking-for-investment` → `/contact`
+  - `/arbitrage-opportunities` → `/portfolio`
+- **React Strict Mode**: Enabled
+- **Build Activity Indicator**: Disabled in dev mode
+- **TypeScript**: Available but project primarily uses JSX
+
+## Client-Side Script Loading
+
+External animation and layout libraries are loaded via Next.js `<Script>` tags in `_app.js`:
+- **WOW.js**: Scroll animations (initialized on page load)
+- **Splitting.js**: Text splitting animations (loaded before interactive)
+- **simpleParallax.js**: Parallax effects
+- **Isotope**: Grid filtering/masonry layouts (loaded before interactive)
