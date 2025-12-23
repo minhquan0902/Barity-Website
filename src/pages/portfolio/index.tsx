@@ -154,6 +154,7 @@ const Portfolio = () => {
             >
               <Tab label="Futures" />
               <Tab label="Options" />
+              <Tab label="ICO Investment" />
             </Tabs>
           </Box>
 
@@ -287,6 +288,61 @@ const Portfolio = () => {
                 </div>
               )}
             </>
+          </TabPanel>
+
+          <TabPanel value={tabValue} index={2}>
+            <section className="blog-pg blog section-padding pt-0">
+              <div className="container">
+                <div className="row justify-content-center">
+                  <div className="col-lg-10">
+                    <div style={{
+                      background: "linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%)",
+                      borderRadius: "12px",
+                      padding: "30px",
+                      boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+                      border: "1px solid rgba(255, 255, 255, 0.1)",
+                      overflowX: "auto"
+                    }}>
+                      <table style={{
+                        width: "100%",
+                        borderCollapse: "collapse",
+                        color: "#fff"
+                      }}>
+                        <thead>
+                          <tr style={{ borderBottom: "2px solid rgba(255, 255, 255, 0.1)" }}>
+                            <th style={{ padding: "15px", textAlign: "left", fontSize: "1.1rem", fontWeight: 600 }}>Project Name</th>
+                            <th style={{ padding: "15px", textAlign: "left", fontSize: "1.1rem", fontWeight: 600 }}>Entry Price</th>
+                            <th style={{ padding: "15px", textAlign: "left", fontSize: "1.1rem", fontWeight: 600 }}>Exit Price</th>
+                            <th style={{ padding: "15px", textAlign: "left", fontSize: "1.1rem", fontWeight: 600 }}>ROI</th>
+                            <th style={{ padding: "15px", textAlign: "left", fontSize: "1.1rem", fontWeight: 600 }}>Holding Period</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.05)" }}>
+                            <td style={{ padding: "20px 15px", fontSize: "1rem" }}>Brickken</td>
+                            <td style={{ padding: "20px 15px", fontSize: "1rem", color: "#999" }}>$0.08</td>
+                            <td style={{ padding: "20px 15px", fontSize: "1rem", color: "#999" }}>$0.24</td>
+                            <td style={{ padding: "20px 15px", fontSize: "1rem" }}>
+                              <span style={{
+                                color: "#4caf50",
+                                fontWeight: 600,
+                                padding: "5px 12px",
+                                background: "rgba(76, 175, 80, 0.1)",
+                                borderRadius: "6px",
+                                display: "inline-block"
+                              }}>
+                                +200%
+                              </span>
+                            </td>
+                            <td style={{ padding: "20px 15px", fontSize: "1rem", color: "#999" }}>2 years</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </TabPanel>
         </Box>
 
