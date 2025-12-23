@@ -46,7 +46,7 @@ const TradingPlatform = ({ theme }) => {
                         )}
                         <Split>
                           <a
-                            href={`https://${item.url}`}
+                            href={item.url}
                             className="link words chars splitting"
                             data-splitting
                           >
