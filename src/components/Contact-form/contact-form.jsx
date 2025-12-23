@@ -19,17 +19,13 @@ const ContactForm = () => {
     let error;
     if (!value) {
       error = "Required";
-    } else if (!/^[A-Z0-9.-]{1,30}$/i.test(value)) {
-      error = "Invalid input";
     }
     return error;
   }
-  function validatePhone(value) {
+  function validateURL(value) {
     let error;
-    if (!value) {
-      error = "Required";
-    } else if (!/^[0-9]{1,11}$/i.test(value)) {
-      error = "Invalid input";
+    if (value && !/^https?:\/\/.+\..+/i.test(value)) {
+      error = "Invalid URL (must start with http:// or https://)";
     }
     return error;
   }
@@ -43,13 +39,13 @@ const ContactForm = () => {
               <h4 className="fw-700 color-font mb-50">Get In Touch.</h4>
               <Formik
                 initialValues={{
-                  firstName: "",
-                  lastName: "",
-                  message: "",
+                  companyName: "",
+                  sector: "",
                   email: "",
-                  phoneNumber: "",
-                  investmentAmount: "",
-                  period: "",
+                  website: "",
+                  cexOrDex: "CEX",
+                  country: "",
+                  transactionVolume: "",
                 }}
                 onSubmit={(values, { resetForm }) => {
                   emailjs
@@ -89,40 +85,27 @@ const ContactForm = () => {
                       <div className="form-group">
                         <Field
                           validate={validateRequired}
-                          id="form_firstName"
+                          id="form_companyName"
                           type="text"
-                          name="firstName"
-                          placeholder="First Name"
+                          name="companyName"
+                          placeholder="Company Name / Project Name"
                           required="required"
                         />
-                        {errors.firstName && touched.firstName && (
-                          <div>{errors.firstName}</div>
+                        {errors.companyName && touched.companyName && (
+                          <div>{errors.companyName}</div>
                         )}
                       </div>
                       <div className="form-group">
                         <Field
                           validate={validateRequired}
-                          id="form_lastName"
+                          id="form_sector"
                           type="text"
-                          name="lastName"
-                          placeholder="Last Name"
+                          name="sector"
+                          placeholder="Sector"
                           required="required"
                         />
-                        {errors.lastName && touched.lastName && (
-                          <div>{errors.lastName}</div>
-                        )}
-                      </div>
-                      <div className="form-group">
-                        <Field
-                          validate={validatePhone}
-                          id="form_phoneNumber"
-                          type="text"
-                          name="phoneNumber"
-                          placeholder="Phone Number"
-                          required="required"
-                        />
-                        {errors.phoneNumber && touched.phoneNumber && (
-                          <div>{errors.phoneNumber}</div>
+                        {errors.sector && touched.sector && (
+                          <div>{errors.sector}</div>
                         )}
                       </div>
                       <div className="form-group">
@@ -132,6 +115,7 @@ const ContactForm = () => {
                           type="email"
                           name="email"
                           placeholder="Email"
+                          required="required"
                         />
                         {errors.email && touched.email && (
                           <div>{errors.email}</div>
@@ -139,34 +123,50 @@ const ContactForm = () => {
                       </div>
                       <div className="form-group">
                         <Field
-                          id="form_investmentAmount"
+                          validate={validateURL}
+                          id="form_website"
                           type="text"
-                          name="investmentAmount"
-                          placeholder="Investment Amount (in AUD)"
+                          name="website"
+                          placeholder="Website (e.g., https://example.com)"
                         />
+                        {errors.website && touched.website && (
+                          <div>{errors.website}</div>
+                        )}
+                      </div>
+                      <div className="form-group">
+                        <Field
+                          validate={validateRequired}
+                          id="form_country"
+                          type="text"
+                          name="country"
+                          placeholder="Country"
+                          required="required"
+                        />
+                        {errors.country && touched.country && (
+                          <div>{errors.country}</div>
+                        )}
                       </div>
                     </div>
                     <div className="form-group">
-                      <p>Investment Period</p>
-
+                      <p>CEX or DEX?</p>
                       <Field
                         className="mt-1"
                         onChange={handleChange}
-                        id="form_period"
-                        name="period"
+                        id="form_cexOrDex"
+                        name="cexOrDex"
                         as="select"
                       >
-                        <option value="6 months">6 Months</option>
-                        <option value="1 year">1 Year</option>
-                        <option value="3 years">3 Years</option>
+                        <option value="CEX">CEX (Centralized Exchange)</option>
+                        <option value="DEX">DEX (Decentralized Exchange)</option>
+                        <option value="Both">Both</option>
                       </Field>
                     </div>
                     <div className="form-group">
                       <Field
                         as="textarea"
-                        id="form_message"
-                        name="message"
-                        placeholder="Reason for investment"
+                        id="form_transactionVolume"
+                        name="transactionVolume"
+                        placeholder="How many transactions do you want to have for your project daily or monthly?"
                         rows="4"
                         required="required"
                       />

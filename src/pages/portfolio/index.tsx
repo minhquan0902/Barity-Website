@@ -164,23 +164,26 @@ const Portfolio = () => {
                   <div className="row justify-content-center">
                     {/* Binance Portfolio Card 1 */}
                     <div className="col-lg-5 col-md-6">
-                      <div className="item mb-50 wow fadeInUp" data-wow-delay=".3s">
+                      <div className="item mb-50 wow fadeInUp" data-wow-delay=".3s" style={{ height: "100%" }}>
                         <div className="cont" style={{
                           background: "linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%)",
                           borderRadius: "12px",
-                          padding: "30px",
+                          padding: "25px",
                           boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
-                          border: "1px solid rgba(255, 255, 255, 0.1)"
+                          border: "1px solid rgba(255, 255, 255, 0.1)",
+                          display: "flex",
+                          flexDirection: "column",
+                          height: "100%"
                         }}>
-                          <div style={{ marginBottom: "20px" }}>
-                            <h4 style={{ color: "#fff", marginBottom: "10px" }}>
+                          <div style={{ marginBottom: "15px" }}>
+                            <h4 style={{ color: "#fff", marginBottom: "8px" }}>
                               Low-Mid Frequency Trading
                             </h4>
-                            <p style={{ color: "#999", fontSize: "0.9rem" }}>
+                            <p style={{ color: "#999", fontSize: "0.9rem", marginBottom: "0" }}>
                               Professional copy trading portfolio
                             </p>
                           </div>
-                          <div className="btn-more" style={{ marginTop: "20px" }}>
+                          <div className="btn-more" style={{ marginTop: "auto" }}>
                             <a
                               href="https://www.binance.com/copy-trading/lead-details/4737679173868543744"
                               target="_blank"
@@ -211,23 +214,26 @@ const Portfolio = () => {
 
                     {/* Binance Portfolio Card 2 */}
                     <div className="col-lg-5 col-md-6">
-                      <div className="item mb-50 wow fadeInUp" data-wow-delay=".5s">
+                      <div className="item mb-50 wow fadeInUp" data-wow-delay=".5s" style={{ height: "100%" }}>
                         <div className="cont" style={{
                           background: "linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%)",
                           borderRadius: "12px",
-                          padding: "30px",
+                          padding: "25px",
                           boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
-                          border: "1px solid rgba(255, 255, 255, 0.1)"
+                          border: "1px solid rgba(255, 255, 255, 0.1)",
+                          display: "flex",
+                          flexDirection: "column",
+                          height: "100%"
                         }}>
-                          <div style={{ marginBottom: "20px" }}>
-                            <h4 style={{ color: "#fff", marginBottom: "10px" }}>
+                          <div style={{ marginBottom: "15px" }}>
+                            <h4 style={{ color: "#fff", marginBottom: "8px" }}>
                               High Frequency Trading
                             </h4>
-                            <p style={{ color: "#999", fontSize: "0.9rem" }}>
+                            <p style={{ color: "#999", fontSize: "0.9rem", marginBottom: "0" }}>
                               180-day performance tracking
                             </p>
                           </div>
-                          <div className="btn-more" style={{ marginTop: "20px" }}>
+                          <div className="btn-more" style={{ marginTop: "auto" }}>
                             <a
                               href="https://www.binance.com/en/copy-trading/lead-details/4737680483063456256?timeRange=180D&isPrivate=true"
                               target="_blank"
